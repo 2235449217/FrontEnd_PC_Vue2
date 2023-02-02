@@ -1,0 +1,10 @@
+@import "./color.scss";
+>>>.el-input.is-active .el-input__inner, >>>.el-input__inner:focus{
+  border-color: $input-focus;
+}
+>>>.el-input__inner{
+  border-color:$border !important
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected{
+  color:$select-item-selected;
+}

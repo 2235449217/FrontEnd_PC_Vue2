@@ -1,0 +1,210 @@
+@import "@/styles/color.scss";
+$container-bg:#f5f5f7;
+$inner-bg:#fff;
+// 媒体查询
+$a:1230px;
+$b:1440px;
+$c:1650px;
+$d:1651px;
+$hover-color:#e9e9e9;
+$bg:#fff;
+
+#work-bench-bg {
+  background:$container-bg;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  .work-bench-container {
+    position: relative;
+    transform: translate(-50%,60px);
+    left: 50%;
+    padding: 4px 16px;
+    @media screen and (min-width: $d){
+      width: 1518px;
+    }
+    @media screen and (max-width: $c){
+      width: 1308px;
+    }
+    @media screen and (max-width: $b){
+      width: 1098px;
+    }
+    @media screen and (max-width: $a){
+      width: 888px;
+    }
+    .custom-dash-block{
+      width:100%;
+      padding:8px;
+      box-sizing: border-box;
+    }
+    .flow-center-wrapper{
+      display:flex;
+      justify-content: space-between;
+      .border-box:nth-child(1){
+        margin-right: 12px;
+      }
+      .border-box:nth-child(3){
+        margin-left: 12px;
+      }
+      .border-box{
+        padding: 12px 20px;
+        background: $inner-bg;
+        border-radius: 6px;
+        box-sizing: border-box;
+        height: 144px;
+        width:20%;
+      }
+      .flow-steps{
+        display: flex;
+        height: 144px;
+        padding: 12px 44px;
+        background: $inner-bg;
+        border-radius: 6px;
+        width:50%;
+        flex-grow: 1;
+        justify-content:space-around;
+        box-sizing: border-box;
+      }
+    }
+    .list-main{
+      min-height: 236px;
+      padding: 16px 16px;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      .app-item{
+        position: relative;
+        float: left;
+        left: 0;
+        box-sizing: border-box;
+        align-self: center;
+        display: flex;
+        justify-content:center;
+        margin: 8px;
+        width: 194px;
+        height: 144px;
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        &:hover {
+          border-color: $hover-color;
+          box-shadow: 0 2px 8px 0 rgb(0 0 0 / 8%);
+          cursor:pointer;
+          .option{
+            opacity: 1;
+          }
+        }
+        .option{
+          @include iconfont;
+          content:'\e65d';
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          box-sizing: border-box;
+          font-size: 16px;
+          opacity:0;
+          color: gray;
+          &:hover{
+            color: $base;
+            opacity: 1;
+          }
+        }
+        .option-selected{
+          opacity: 1;
+        }
+        .list{
+          position: absolute;
+          transform: translate(80px,30px);
+          color: #1f2d3d;
+          background: #fff;
+          border-radius: 3px;
+          padding: 4px 0;
+          box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+          z-index: 10;
+          .list-item:nth-child(2){
+            color: $list-waring-text;
+          }
+          .list-item{
+            display: flex;
+            align-items: center;
+            margin: 0 4px;
+            padding: 0 16px;
+            border-radius: 3px;
+            height: 36px;
+            &:hover{
+              background: $list-hover;
+            }
+          }
+        }
+      }
+      .app-item-selected{
+        border-color: $hover-color;
+        box-shadow: 0 2px 8px 0 rgb(0 0 0 / 8%);
+      }
+    }
+  }
+}
+
+.dialog-container{
+  .list-item{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-bottom:16px;
+    .item-content-box:hover{
+      cursor: pointer;
+      .item-content{
+        position: relative;
+        &::before{
+          @include iconfont;
+          content:'\e65d';
+          position: absolute;
+          left:0;
+          width: 100%;
+          height:100%;
+          box-sizing: border-box;
+          background-color: rgba(0,0,0,.6);
+          border-radius: 11px;
+          text-align: center;
+          color:white;
+          vertical-align: middle;
+          line-height:55px;
+        }
+      }
+    }
+    .item-label{
+      margin-bottom: 7px;
+    }
+  }
+}
+
+>>>.el-dialog__body{
+  padding: 0 10px 10px !important;
+}
+.color-container{
+  display: flex;
+  justify-content: space-between;
+  .color-item{
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+  }
+}
+.example-box{
+  margin: 10px 10px 0px;
+  padding: 10px 0 0 5px;
+  overflow: auto;
+  background: #f4f6f9;
+  border-radius: 3px;
+  height: 278px;
+  .icon-examples{
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+  }
+}
+
+
+

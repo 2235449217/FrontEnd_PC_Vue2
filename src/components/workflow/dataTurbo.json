@@ -1,0 +1,134 @@
+{
+  "flowElementList": [
+    {
+      "incoming": [],
+      "outgoing": [
+        "efa83b06-73a6-4e40-9ca9-98ce7c8a7bfd"
+      ],
+      "type": 2,
+      "properties": {
+        "name": "流程发起节点",
+        "minX": "",
+        "x": 665,
+        "y": 87,
+        "text": {
+          "x": 665,
+          "y": 87,
+          "value": "流程发起节点"
+        },
+        "logicFlowType": "start"
+      },
+      "key": "16abf77e-747f-41da-8e0a-fab0a4ae0840",
+      "minX": 665
+    },
+    {
+      "incoming": [
+        "0cf07fd9-52ba-4c95-84a9-3ac75e28575c"
+      ],
+      "outgoing": [],
+      "type": 5,
+      "properties": {
+        "name": "流程结束",
+        "minX": "",
+        "x": 665,
+        "y": 315,
+        "text": {
+          "x": 665,
+          "y": 315,
+          "value": "流程结束"
+        },
+        "logicFlowType": "end"
+      },
+      "key": "b22a4155-b9f5-4373-ba54-9fa80c043478"
+    },
+    {
+      "incoming": [
+        "efa83b06-73a6-4e40-9ca9-98ce7c8a7bfd"
+      ],
+      "outgoing": [
+        "0cf07fd9-52ba-4c95-84a9-3ac75e28575c"
+      ],
+      "type": 3,
+      "properties": {
+        "name": "审批节点",
+        "minX": "",
+        "x": 665,
+        "y": 200,
+        "text": {
+          "x": 665,
+          "y": 200,
+          "value": "审批节点"
+        },
+        "logicFlowType": "approve"
+      },
+      "key": "dc9a9e3b-2f05-4ba3-bffc-648a7b8d2f39",
+      "minX": 665
+    },
+    {
+      "incoming": [
+        "16abf77e-747f-41da-8e0a-fab0a4ae0840"
+      ],
+      "outgoing": [
+        "dc9a9e3b-2f05-4ba3-bffc-648a7b8d2f39"
+      ],
+      "type": 1,
+      "properties": {
+        "name": "",
+        "text": "",
+        "startPoint": {
+          "x": 665,
+          "y": 107
+        },
+        "endPoint": {
+          "x": 665,
+          "y": 180
+        },
+        "pointsList": [
+          {
+            "x": 665,
+            "y": 107
+          },
+          {
+            "x": 665,
+            "y": 180
+          }
+        ],
+        "logicFlowType": "customEdge"
+      },
+      "key": "efa83b06-73a6-4e40-9ca9-98ce7c8a7bfd"
+    },
+    {
+      "incoming": [
+        "dc9a9e3b-2f05-4ba3-bffc-648a7b8d2f39"
+      ],
+      "outgoing": [
+        "b22a4155-b9f5-4373-ba54-9fa80c043478"
+      ],
+      "type": 1,
+      "properties": {
+        "name": "",
+        "text": "",
+        "startPoint": {
+          "x": 665,
+          "y": 220
+        },
+        "endPoint": {
+          "x": 665,
+          "y": 295
+        },
+        "pointsList": [
+          {
+            "x": 665,
+            "y": 220
+          },
+          {
+            "x": 665,
+            "y": 295
+          }
+        ],
+        "logicFlowType": "customEdge"
+      },
+      "key": "0cf07fd9-52ba-4c95-84a9-3ac75e28575c"
+    }
+  ]
+}

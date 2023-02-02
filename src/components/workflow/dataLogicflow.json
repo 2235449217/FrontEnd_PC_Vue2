@@ -1,0 +1,254 @@
+{
+  "nodes": [
+    {
+      "id": "528ac1bd-ccce-4b50-bbd7-9dc3bf08d526",
+      "type": "start",
+      "x": 245,
+      "y": 145,
+      "properties": {
+        "name": "流程发起节点"
+      },
+      "text": {
+        "x": 245,
+        "y": 145,
+        "value": "流程发起节点"
+      }
+    },
+    {
+      "id": "3c42c677-5c30-4cd7-b69d-b45e72f7d5c8",
+      "type": "approve",
+      "x": 382,
+      "y": 252,
+      "properties": {
+        "name": "审批节点1",
+        "depts": [],
+        "authoritys": [],
+        "users": [],
+        "isContersign": ""
+      },
+      "text": {
+        "x": 382,
+        "y": 252,
+        "value": "审批节点"
+      }
+    },
+    {
+      "id": "4da817a3-bb8c-43bf-ab76-9a0a88d7fc24",
+      "type": "send",
+      "x": 636,
+      "y": 252,
+      "properties": {
+        "name": "抄送节点",
+        "depts": [],
+        "authoritys": [],
+        "users": []
+      },
+      "text": {
+        "x": 636,
+        "y": 252,
+        "value": "抄送节点"
+      }
+    },
+    {
+      "id": "e4401e5b-b2f3-4a6e-a8e7-5a15d99286fe",
+      "type": "end",
+      "x": 246,
+      "y": 370,
+      "properties": {
+        "name": "流程结束"
+      },
+      "text": {
+        "x": 246,
+        "y": 370,
+        "value": "流程结束"
+      }
+    },
+    {
+      "id": "ae463537-4693-4564-b337-87bbdefc3dda",
+      "type": "approve",
+      "x": 81,
+      "y": 253,
+      "properties": {
+        "name": "审批节点2",
+        "depts": [],
+        "authoritys": [],
+        "users": [],
+        "isContersign": ""
+      },
+      "text": {
+        "x": 81,
+        "y": 253,
+        "value": "审批节点"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "324c6907-7396-41d6-a9fd-b19ee037c64e",
+      "type": "customEdge",
+      "sourceNodeId": "528ac1bd-ccce-4b50-bbd7-9dc3bf08d526",
+      "targetNodeId": "3c42c677-5c30-4cd7-b69d-b45e72f7d5c8",
+      "startPoint": {
+        "x": 245,
+        "y": 165.4749984741211
+      },
+      "endPoint": {
+        "x": 382,
+        "y": 232.4749984741211
+      },
+      "properties": {
+        "name": ""
+      },
+      "pointsList": [
+        {
+          "x": 245,
+          "y": 165.4749984741211
+        },
+        {
+          "x": 245,
+          "y": 202.4749984741211
+        },
+        {
+          "x": 382,
+          "y": 202.4749984741211
+        },
+        {
+          "x": 382,
+          "y": 232.4749984741211
+        }
+      ]
+    },
+    {
+      "id": "e2f35338-2b5c-4532-b73f-9c95ba0a45bd",
+      "type": "customEdge",
+      "sourceNodeId": "3c42c677-5c30-4cd7-b69d-b45e72f7d5c8",
+      "targetNodeId": "e4401e5b-b2f3-4a6e-a8e7-5a15d99286fe",
+      "startPoint": {
+        "x": 382,
+        "y": 272.4749984741211
+      },
+      "endPoint": {
+        "x": 246,
+        "y": 350.4749984741211
+      },
+      "properties": {
+        "name": ""
+      },
+      "pointsList": [
+        {
+          "x": 382,
+          "y": 272.4749984741211
+        },
+        {
+          "x": 382,
+          "y": 320.4749984741211
+        },
+        {
+          "x": 246,
+          "y": 320.4749984741211
+        },
+        {
+          "x": 246,
+          "y": 350.4749984741211
+        }
+      ]
+    },
+    {
+      "id": "bbad4f76-3a27-4718-981c-960605ec119d",
+      "type": "customEdge",
+      "sourceNodeId": "3c42c677-5c30-4cd7-b69d-b45e72f7d5c8",
+      "targetNodeId": "4da817a3-bb8c-43bf-ab76-9a0a88d7fc24",
+      "startPoint": {
+        "x": 462,
+        "y": 252.4749984741211
+      },
+      "endPoint": {
+        "x": 556,
+        "y": 252.4749984741211
+      },
+      "properties": {
+        "name": ""
+      },
+      "pointsList": [
+        {
+          "x": 462,
+          "y": 252.4749984741211
+        },
+        {
+          "x": 556,
+          "y": 252.4749984741211
+        }
+      ]
+    },
+    {
+      "id": "45242715-595d-4895-a7b5-301d6f6c7bb6",
+      "type": "customEdge",
+      "sourceNodeId": "528ac1bd-ccce-4b50-bbd7-9dc3bf08d526",
+      "targetNodeId": "ae463537-4693-4564-b337-87bbdefc3dda",
+      "startPoint": {
+        "x": 245,
+        "y": 165.4749984741211
+      },
+      "endPoint": {
+        "x": 81,
+        "y": 233.4749984741211
+      },
+      "properties": {
+        "name": ""
+      },
+      "pointsList": [
+        {
+          "x": 245,
+          "y": 165.4749984741211
+        },
+        {
+          "x": 245,
+          "y": 203.4749984741211
+        },
+        {
+          "x": 81,
+          "y": 203.4749984741211
+        },
+        {
+          "x": 81,
+          "y": 233.4749984741211
+        }
+      ]
+    },
+    {
+      "id": "50389ef0-70cd-40eb-a4f8-6bb46ae0316a",
+      "type": "customEdge",
+      "sourceNodeId": "ae463537-4693-4564-b337-87bbdefc3dda",
+      "targetNodeId": "e4401e5b-b2f3-4a6e-a8e7-5a15d99286fe",
+      "startPoint": {
+        "x": 81,
+        "y": 273.4749984741211
+      },
+      "endPoint": {
+        "x": 246,
+        "y": 350.4749984741211
+      },
+      "properties": {
+        "name": ""
+      },
+      "pointsList": [
+        {
+          "x": 81,
+          "y": 273.4749984741211
+        },
+        {
+          "x": 81,
+          "y": 320.4749984741211
+        },
+        {
+          "x": 246,
+          "y": 320.4749984741211
+        },
+        {
+          "x": 246,
+          "y": 350.4749984741211
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+@import "./color.scss";
+.el-button--primary{
+  background:$btn-primary-base;
+  color: $btn-primary-text;
+  border-color: $btn-primary-border;
+  &:hover{
+    background:$btn-primary-hover;
+  }
+  &:active{
+    background:$btn-primary-active;
+  }
+}
+
+.el-button--default{
+  background:$btn-default-base;
+  color: $btn-default-text;
+  border-color: $btn-default-border;
+  &:hover{
+    background:$btn-default-hover;
+  }
+  &:active{
+    background:$btn-default-active;
+  }
+}
